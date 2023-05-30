@@ -9,6 +9,7 @@ import java.awt.Color;
 import javax.swing.JCheckBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
 
 public class VentanaCalculadora extends JFrame {
 
@@ -54,7 +55,7 @@ public class VentanaCalculadora extends JFrame {
 	 */
 	public VentanaCalculadora() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 498, 623);
+		setBounds(100, 100, 400, 581);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.PINK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -63,13 +64,15 @@ public class VentanaCalculadora extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblOperaciones = new JLabel("");
+		lblOperaciones.setFont(new Font("Tahoma", Font.PLAIN, 32));
 		lblOperaciones.setForeground(Color.BLACK);
-		lblOperaciones.setBackground(Color.WHITE);
-		lblOperaciones.setBounds(53, 11, 197, 72);
+		lblOperaciones.setBackground(new Color(192, 192, 192));
+		lblOperaciones.setBounds(33, 36, 216, 66);
 		contentPane.add(lblOperaciones);
 
 		JButton btnC = new JButton("C");
-		btnC.setBackground(Color.WHITE);
+		btnC.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnC.setBackground(new Color(176, 224, 230));
 		btnC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -80,91 +83,111 @@ public class VentanaCalculadora extends JFrame {
 
 			}
 		});
-		btnC.setBounds(301, 11, 72, 66);
+		btnC.setBounds(278, 36, 72, 66);
 		contentPane.add(btnC);
 
 		JButton btn9 = new JButton("9");
+		btn9.setBackground(new Color(245, 245, 220));
+		btn9.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "9");
 			}
 		});
-		btn9.setBounds(301, 102, 72, 66);
+		btn9.setBounds(278, 122, 72, 66);
 		contentPane.add(btn9);
 
 		JButton btn7 = new JButton("7");
+		btn7.setBackground(new Color(245, 245, 220));
+		btn7.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "7");
 			}
 		});
-		btn7.setBounds(53, 102, 72, 66);
+		btn7.setBounds(32, 122, 72, 66);
 		contentPane.add(btn7);
 
 		JButton btn8 = new JButton("8");
+		btn8.setBackground(new Color(245, 245, 220));
+		btn8.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "8");
 			}
 		});
-		btn8.setBounds(178, 102, 72, 66);
+		btn8.setBounds(153, 122, 72, 66);
 		contentPane.add(btn8);
 
 		JButton btn4 = new JButton("4");
+		btn4.setBackground(new Color(245, 245, 220));
+		btn4.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "4");
 			}
 		});
-		btn4.setBounds(53, 185, 72, 66);
+		btn4.setBounds(32, 198, 72, 66);
 		contentPane.add(btn4);
 
 		JButton btn5 = new JButton("5");
+		btn5.setBackground(new Color(245, 245, 220));
+		btn5.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "5");
 			}
 		});
-		btn5.setBounds(178, 185, 72, 66);
+		btn5.setBounds(153, 198, 72, 66);
 		contentPane.add(btn5);
 
 		JButton btn6 = new JButton("6");
+		btn6.setBackground(new Color(245, 245, 220));
+		btn6.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "6");
 			}
 		});
-		btn6.setBounds(301, 185, 72, 66);
+		btn6.setBounds(278, 198, 72, 66);
 		contentPane.add(btn6);
 
 		JButton btn1 = new JButton("1");
+		btn1.setBackground(new Color(245, 245, 220));
+		btn1.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "1");
 			}
 		});
-		btn1.setBounds(53, 280, 72, 66);
+		btn1.setBounds(33, 274, 72, 66);
 		contentPane.add(btn1);
 
 		JButton btn2 = new JButton("2");
+		btn2.setBackground(new Color(245, 245, 220));
+		btn2.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "2");
 			}
 		});
-		btn2.setBounds(178, 280, 72, 66);
+		btn2.setBounds(153, 274, 72, 66);
 		contentPane.add(btn2);
 
 		JButton btn3 = new JButton("3");
+		btn3.setBackground(new Color(245, 245, 220));
+		btn3.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "3");
 			}
 		});
-		btn3.setBounds(301, 280, 72, 66);
+		btn3.setBounds(278, 274, 72, 66);
 		contentPane.add(btn3);
 
 		JButton btnPunto = new JButton(".");
+		btnPunto.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnPunto.setBackground(new Color(176, 224, 230));
 		btnPunto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (coma == 0) {
@@ -173,20 +196,23 @@ public class VentanaCalculadora extends JFrame {
 				coma++;
 			}
 		});
-		btnPunto.setBounds(53, 380, 72, 66);
+		btnPunto.setBounds(32, 350, 72, 66);
 		contentPane.add(btnPunto);
 
 		JButton btn0 = new JButton("0");
+		btn0.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btn0.setBackground(new Color(245, 245, 220));
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				lblOperaciones.setText(lblOperaciones.getText() + "0");
 			}
 		});
-		btn0.setBounds(178, 380, 72, 66);
+		btn0.setBounds(153, 350, 72, 66);
 		contentPane.add(btn0);
 
 		JButton btnMas = new JButton("+");
-		btnMas.setBackground(Color.WHITE);
+		btnMas.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnMas.setBackground(new Color(176, 224, 230));
 		btnMas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				coma = 0;
@@ -196,13 +222,15 @@ public class VentanaCalculadora extends JFrame {
 				}else {
 					operando1 = lblOperaciones.getText();
 				}
+				lblOperaciones.setText("");
 			}
 		});
-		btnMas.setBounds(53, 475, 72, 66);
+		btnMas.setBounds(32, 441, 72, 66);
 		contentPane.add(btnMas);
 
 		JButton btnMenos = new JButton("-");
-		btnMenos.setBackground(Color.WHITE);
+		btnMenos.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnMenos.setBackground(new Color(176, 224, 230));
 		btnMenos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				coma = 0;
@@ -212,13 +240,15 @@ public class VentanaCalculadora extends JFrame {
 				}else {
 					operando1 = lblOperaciones.getText();
 				}
+				lblOperaciones.setText("");
 			}
 		});
-		btnMenos.setBounds(135, 475, 72, 66);
+		btnMenos.setBounds(114, 441, 72, 66);
 		contentPane.add(btnMenos);
 
 		JButton btnPor = new JButton("x");
-		btnPor.setBackground(Color.WHITE);
+		btnPor.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnPor.setBackground(new Color(176, 224, 230));
 		btnPor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				coma = 0;
@@ -232,11 +262,12 @@ public class VentanaCalculadora extends JFrame {
 				lblOperaciones.setText("");
 			}
 		});
-		btnPor.setBounds(217, 475, 72, 66);
+		btnPor.setBounds(196, 441, 72, 66);
 		contentPane.add(btnPor);
 
 		JButton btnDividir = new JButton("/");
-		btnDividir.setBackground(Color.WHITE);
+		btnDividir.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnDividir.setBackground(new Color(176, 224, 230));
 		btnDividir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				coma = 0;
@@ -246,11 +277,15 @@ public class VentanaCalculadora extends JFrame {
 				}else {
 					operando1 = lblOperaciones.getText();
 				}
+				lblOperaciones.setText("");
 			}
 		});
-		btnDividir.setBounds(301, 475, 72, 66);
+		btnDividir.setBounds(278, 441, 72, 66);
 		contentPane.add(btnDividir);
+		
 		JButton btnIgual = new JButton("=");
+		btnIgual.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnIgual.setBackground(new Color(176, 224, 230));
 		btnIgual.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				coma = 0;
@@ -274,7 +309,7 @@ public class VentanaCalculadora extends JFrame {
 				lblOperaciones.setText(operando1);
 			}
 		});
-		btnIgual.setBounds(301, 380, 72, 66);
+		btnIgual.setBounds(278, 350, 72, 66);
 		contentPane.add(btnIgual);
 	}
 }
